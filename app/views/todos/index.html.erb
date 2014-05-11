@@ -3,19 +3,10 @@
   </thead>
 
   <tbody>
-    <% @todos.each do |todo| %>
-      <tr>
-        <td><%= todo.title %></td>
-        <td><%= todo.task %></td>
-        <td><%= link_to 'Show', todo %></td>
-        <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
-        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
     <div class="jumbotron">
-      <%= image_tag("//yuya.kakui.name/kikupon_images/takamaccho-kun.jpg", :height=> "220", :align => "right") %>
-      <h1>What is Kikupon PRJ ?</h1>
-      <p><u>Under construction</u></p></br>
+      <%= image_tag("//yuya.kakui.name/kikupon_images/takamaccho-kun.jpg", :height=> "240", :align => "right") %>
+      <h1>What's Kikupon ?</h1>
+      <p>Kikupon is a group which constist of Takamaccho-kun.</p></br>
       <p>
         <a class="btn btn-primary btn-lg">Learn more</a>
       </p>
@@ -25,27 +16,27 @@
         <div class="col-lg-4">
           <div class="panel panel-danger">
             <div class="panel-heading">
-              <h3 class="panel-title"><%= link_to "Takamaccho-kun Stamp PRJ", :controller => "takamacchos", :action => "index" %></h3>
+              <h3 class="panel-title"><%= link_to "#1 Takamaccho-kun Line Stamp", :controller => "takamacchos", :action => "index" %></h3>
             </div>
             <div class="panel-body">
-              <p>Line Stamp</p>
+              <p>This is Line Stamps of Takamaccho-kun.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="panel panel-success">
             <div class="panel-heading">
-              <h3 class="panel-title">Kikupon app PRJ</h3>
+              <h3 class="panel-title">#2 Kikupon App</h3>
             </div>
             <div class="panel-body">
-              <p>iOS app</p>
+              <p>under construction</p>
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="panel panel-warning">
             <div class="panel-heading">
-              <h3 class="panel-title">Others</h3>
+              <h3 class="panel-title">#3 Others</h3>
             </div>
             <div class="panel-body">
               <p>under construction</p>
