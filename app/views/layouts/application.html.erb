@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!--html>
 <head>
   <title>KikuponTop</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -11,4 +10,55 @@
 <%= yield %>
 
 </body>
+</html-->
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Kikupon</title>
+                <meta name="author" content="kikupon.prj">
+                <%= stylesheet_link_tag    "application", :media => "all" %>
+                <%= stylesheet_link_tag    "ring" %>
+                <%= javascript_include_tag "application" %>
+                <%= csrf_meta_tags %>
+                <%= javascript_include_tag "//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" %>
+                <%= javascript_include_tag "//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js" %>
+                <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" %>
+                <%= favicon_link_tag '/cube.ico' %>
+        </head>
+        <body>
+                <div class="navbar navbar-inverse">
+                        <div class="container">
+                                <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapase" data-target=".navbar-responsive-collapse"> 
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                        </button>
+                                        <a href="../" class="navbar-brand">Kikupon</a>
+                                </div>
+                                <div class="navbar-collapse collapse nvabar-responsive-collapse">
+                                        <ul class="nav navbar-nav">
+                                                <li><a href="/cookings">Takamaccho-kun Stamp PRJ</a></li>
+                                                <li><a href="#">Kikupon app PRJ</a></li>
+                                                <li><a href="#">Others</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+                <div class="container">
+                        <%= yield %>
+                </div>
+                <div class="container">
+                        <hr/>
+                        <hr/>
+                        <div class="row">
+                                <div class=col-lg-12">
+                                        <ul class="list-unstyled">
+                                                <li class="pull-right"><a href="#top">Back to top</a></li>
+                                                <li><p>&copy; kikupon group</p></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+        </body>
 </html>
