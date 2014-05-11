@@ -1,0 +1,25 @@
+<h1>Listing takamacchos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @takamacchos.each do |takamaccho| %>
+      <tr>
+        <td><%= link_to 'Show', takamaccho %></td>
+        <td><%= link_to 'Edit', edit_takamaccho_path(takamaccho) %></td>
+        <td><%= link_to 'Destroy', takamaccho, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Takamaccho', new_takamaccho_path %>

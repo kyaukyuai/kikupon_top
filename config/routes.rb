@@ -1,7 +1,12 @@
 KikuponTop::Application.routes.draw do
+  resources :takamacchos
+
   resources :todos
 
   root 'todos#index'
+
+  match 'takamacchos/' => 'takamacchos#index', :via => 'get'
+  match 'takamacchos/' => 'takamacchos#index', :via => 'post'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
