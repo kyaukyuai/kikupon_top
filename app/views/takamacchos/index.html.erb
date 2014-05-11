@@ -1,25 +1,34 @@
-<h1>Listing takamacchos</h1>
-
-<table>
+<div class="page-header">
+  <h1 id="type">Introduction of Takamacho-kun</h1>
+</div>
+<p></p>
+<table class="table table-striped table-hover">
   <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
   </thead>
-
-  <tbody>
-    <% @takamacchos.each do |takamaccho| %>
-      <tr>
-        <td><%= link_to 'Show', takamaccho %></td>
-        <td><%= link_to 'Edit', edit_takamaccho_path(takamaccho) %></td>
-        <td><%= link_to 'Destroy', takamaccho, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <tdoby>
+    <tr>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamaccho-kun.jpg", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_yes.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_no.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_hoi.png", :height => "150") %></td>
+    </tr>
+    <tr>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamaccho-kun.jpg", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_yes.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_no.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_hoi.png", :height => "150") %></td>
+    </tr>
+    <tr>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamaccho-kun.jpg", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_yes.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_no.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_hoi.png", :height => "150") %></td>
+    </tr>
+    <tr>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamaccho-kun.jpg", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_yes.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_no.png", :height => "150") %></td>
+      <td><%= image_tag("//yuya.kakui.name/kikupon_images/takamacho-kun_hoi.png", :height => "150") %></td>
+    </tr>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Takamaccho', new_takamaccho_path %>
