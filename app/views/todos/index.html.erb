@@ -1,12 +1,5 @@
 <table>
   <thead>
-    <tr>
-      <th>Title</th>
-      <th>Task</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
   </thead>
 
   <tbody>
@@ -22,14 +15,44 @@
     <div class="jumbotron">
       <%= image_tag("takamaccho-kun.jpg", :height=> "220", :align => "right") %>
       <h1>What is Kikupon PRJ ?</h1>
-      <p><u>Under construction</u></p>
+      <p><u>Under construction</u></p></br>
       <p>
         <a class="btn btn-primary btn-lg">Learn more</a>
       </p>
     </div>
+    <div class="col-lg-12">
+      <div class="bs-component">
+        <div class="col-lg-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Takamaccho-kun Stamp PRJ</h3>
+            </div>
+            <div class="panel-body">
+              <p>Line Stamp</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title">Kikupon app PRJ</h3>
+            </div>
+            <div class="panel-body">
+              <p>iOS app</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Others</h3>
+            </div>
+            <div class="panel-body">
+              <p>under construction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Todo', new_todo_path %>
