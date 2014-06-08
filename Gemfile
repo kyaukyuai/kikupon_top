@@ -51,3 +51,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'devise'
+# omniauth
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
